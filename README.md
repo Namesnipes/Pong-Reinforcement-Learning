@@ -1,5 +1,5 @@
 # Pong-Reinforcement-Learning
-This is a simple implementation of Pong game using Pygame and Reinforcement Learning.
+This is a fork of an implementation of Pong game using Pygame and Reinforcement Learning. The reinforcement learning part is made from scratch but the game is reused!
 
 # What it does
 The game has two paddles, one controlled by the computer (Right paddle) and the other by the reinforcement learning algorithm (Left paddle). The goal of the algorithm is to learn to control the paddle to keep the ball from hitting the player's side and maximize the score. The reinforcement learning algorithm uses a Q-learning algorithm to update the Q-values of the state-action pairs, which is stored in a Q-table. The state is represented by the positions of the ball and the paddles, and the actions are moving the paddle up, staying put, or moving the paddle down.
@@ -9,6 +9,7 @@ The Q-learning algorithm updates the Q-values based on the rewards obtained by t
 # Requirements
 ```
 python 3.9
+numpy
 pygame
 ```
 
