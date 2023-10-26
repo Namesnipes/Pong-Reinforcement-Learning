@@ -13,7 +13,10 @@ pygame
 ```
 
 # Usage
-To use this program, cd into the folder and simply run the train.py file or run the file in a Python environment.
+To use this program, cd into the folder and simply run the main.py file or run the file in a Python environment. By default, you will be presented with a pre-trained AI model (left) and a basic paddle that always follows the ball (right). 
+- To take control press "q" and use "w" and "s" to move the paddle up and down. 
+- For fast training press "R", this will disable rendering and speed up the training process significantly, press "P" to resume rendering the game at normal speed.
+- Press "B" to save the current model to a file, you can disable loading the model from a file by commenting out the `load_q_table()` line in main.py
 ```
 $ git clone https://github.com/matriley/Pong-Reinforcement-Learning.git
 $ python3 train.py
@@ -27,7 +30,3 @@ The reward is calculated as the difference between the scores of the two players
 Q(s, a) += alpha * (reward + gamma * max(Q(s', a')) - Q(s, a))
 ```
 Where s is the current state, a is the action taken, s' is the new state after taking the action, alpha is the learning rate, and gamma is the discount factor.
-
-# Furure updates
-* Working on a neural network version, opposed to only reinforcement learning.
-* Updating code to render with OpenGL to improve performance. 
