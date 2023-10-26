@@ -4,6 +4,7 @@ This is a fork of an implementation of Pong game using Pygame and Reinforcement 
 
 https://github.com/Namesnipes/Pong-Reinforcement-Learning/assets/36575231/9778ac24-b1d8-4a18-9cf8-385471df8106
 
+(Left: AI, Right: Paddle that follows the ball always)
 
 
 # What it does
